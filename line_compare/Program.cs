@@ -14,17 +14,20 @@ class DISTANCE
 	public static void Main()
 	{
 		double a = (Math.Round(distance(10, 8, 12, 6) * 100000.0) / 100000.0);
-		double b = (Math.Round(distance(10, 8, 12, 6) * 100000.0) / 100000.0);
+		double b = (Math.Round(distance(1, 8, 12, 6) * 100000.0) / 100000.0);
 		Console.WriteLine("distance of first line :" + a);
 		Console.WriteLine("distance of second line :" + b);
 		if (a == b)
 		{
 			Console.WriteLine("lines are same");
 		}
+		else if (a > b)
+		{
+			Console.WriteLine("first line is greater then second line");
+		}
 		else
 		{
-			Console.WriteLine("lines are not same");
+			Console.WriteLine("second line is greater then first line");
 		}
-
 	}
 }
