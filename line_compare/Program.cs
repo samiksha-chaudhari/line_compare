@@ -10,9 +10,21 @@ class DISTANCE
 					Math.Pow(y2 - y1, 2) * 1.0);
 	}
 
+
 	public static void Main()
 	{
-		Console.WriteLine(Math.Round(distance(10, 8, 12, 6)
-								* 100000.0) / 100000.0);
+		double a = (Math.Round(distance(10, 8, 12, 6) * 100000.0) / 100000.0);
+		double b = (Math.Round(distance(10, 8, 12, 6) * 100000.0) / 100000.0);
+		Console.WriteLine("distance of first line :" + a);
+		Console.WriteLine("distance of second line :" + b);
+		if (a == b)
+		{
+			Console.WriteLine("lines are same");
+		}
+		else
+		{
+			Console.WriteLine("lines are not same");
+		}
+
 	}
 }
