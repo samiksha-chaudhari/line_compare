@@ -3,7 +3,7 @@
 class DISTANCE
 {
 	// Function to calculate distance
-	static double distance(int x1, int y1, int x2, int y2)
+	public static double distance(int x1, int y1, int x2, int y2)
 	{
 		// Calculating distance
 		return Math.Sqrt(Math.Pow(x2 - x1, 2) +
